@@ -1,0 +1,10 @@
+{
+  "name": "index-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lunr": "^2.3.8",
+    "lunr-languages": "^1.4.0"
+  }
+}
