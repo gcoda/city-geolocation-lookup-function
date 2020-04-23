@@ -1,0 +1,7 @@
+_ignore
+inputs/*
+!inputs/.gitkeep
+generated/*
+!generated/.gitkeep
+outputs/*
+!outputs/.gitkeep

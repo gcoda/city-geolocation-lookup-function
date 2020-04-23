@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "preserveWatchOutput": true,
+    "incremental": true,
+    "allowJs": true,
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "composite": false,
+    "target": "es2016",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "noErrorTruncation": true,
+    "noUnusedLocals": false,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2019"],
+    "outDir": "dist"
+  },
+  "include": ["src/**/*", "src/*"],
+  "exclude": ["node_modules", "node_modules/**", "dist/**/*", "dist/*"]
+}

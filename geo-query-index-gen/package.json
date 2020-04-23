@@ -1,0 +1,43 @@
+{
+  "name": "geo-query-index-gen",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^13.13.1",
+    "lunr": "^2.3.8",
+    "lunr-languages": "^1.4.0"
+  },
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "watch:all": "concurrently --raw npm:build:watch nodemon",
+    "clean": "rimraf dist",
+    "dev": "npm run clean && npm run build && npm run watch:all"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "exec": "npm start",
+    "watch": [
+      "dist/**/*.js",
+      "dist/*.js"
+    ],
+    "delay": "100",
+    "quiet": true,
+    "verbose": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.1.1",
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.4"
+  }
+}
